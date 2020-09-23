@@ -1,0 +1,34 @@
+{% macro zipCode(collectionName) %}
+<div class="hero-header">
+	<div class="container-holder">
+		<div class="zip-holder">
+			<div class="content">
+				<h2>
+					{{ collectionName.data.quote | safe }}
+				</h2>
+				<div class='subquote'>{{ collectionName.data.subQuote | safe }}</div>
+			</div>
+
+			<div class="zip-holder">
+				<div class="zip-content">
+					<div class="zip-header">{{ collectionName.data.repairPlans }}</div>
+					<div class="zip-input-holder">
+						<input class="zip-value" type="text" maxlength="5" placeholder="Enter Your ZIP Code"/>
+						<label class='zip-error top-error'>Please input a 5 digit ZIP Code.</label>
+						<button class='go-btn'>{{ collectionName.data.buttonData }}</button>
+					</div>
+
+					<div class="existing-zip">
+						<div class="addr-holder">
+				            <span class="home-city"></span>
+				            <span class="home-state"></span>
+				            <span class="home-zip"></span>
+          				</div>
+          				<button class='view-plans'>View Plans</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endmacro %}

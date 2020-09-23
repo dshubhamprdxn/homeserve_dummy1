@@ -1,0 +1,28 @@
+---
+layout: layouts/base-layout.njk
+footerStyle: 'landing' 
+headerStyle: 'default'
+eleventyNavigation:
+  key: mikerow
+  order: 7
+---
+{# footerstyle is landing since we want footer of landing page here #}
+
+{% for data in collections.mike %}
+
+{% from 'macros/banner-macro.njk' import BannerData %}
+{{ BannerData('/assets/images/Banner-Mikerow.jpg') }}
+
+{% from 'macros/zipcode.njk' import zipCode %}
+{{ zipCode(data) }}
+
+<div class='about-homserve'>
+	<div class='wrapper'>
+		{{content | safe }}
+	</div>
+</div>
+
+{% from 'macros/online-quote.njk' import onlineQuote %}
+{{ onlineQuote(data) }}
+
+{% endfor %}

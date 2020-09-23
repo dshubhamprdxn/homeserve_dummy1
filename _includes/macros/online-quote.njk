@@ -1,0 +1,22 @@
+{% macro onlineQuote(collectionName) %}
+<div class="online-quote">
+	<div class="wrapper">
+		<p>{{collectionName.data.bottomQuote}}</p>
+		<form class="zip-form">
+			<div class="zip-code">
+				<input type="text" maxlength="5" placeholder="Enter Your ZIP Code"/>
+				<label class='zip-error bottom-error'>Please input a 5 digit ZIP Code.</label>
+			</div>
+			<button>{{ collectionName.data.bottomButton }}</button>
+		</form>
+		<div class="existing-zip-down">
+			<div class="addr-holder">
+	            <span class="home-city"></span>
+	            <span class="home-state"></span>
+	            <span class="home-zip"></span>
+			</div>
+			<button class='view-plans-down'>View Plans</button>
+		</div>
+	</div>
+</div>
+{% endmacro %}
