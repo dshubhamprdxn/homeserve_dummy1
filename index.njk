@@ -9,12 +9,15 @@ pagination:
   alias: landing
 ---
 
-<div class="banner-image">
+{# <div class="banner-image">
 	<figure>
 		<img src="/assets/images/zip-in-banner.jpg">
 	</figure>
-</div>
-<div class="hero-header">
+</div> #}
+{% from 'macros/banner-macro.njk' import BannerData %}
+{{ BannerData('/assets/images/zip-in-banner.jpg') }}
+
+{# <div class="hero-header">
 	<div class="container-holder">
 		<div class="zip-holder">
 			<div class="content">
@@ -45,10 +48,13 @@ pagination:
 			</div>
 		</div>
 	</div>
-</div>
+</div> #}
+{% from 'macros/zipcode.njk' import zipCode %}
+{{ zipCode(landing) }}
 
 {{ landing.templateContent | safe }}
 
+{# 
 <div class="online-quote">
 	<div class="wrapper">
 		<p>{{landing.data.bottomQuote}}</p>
@@ -68,4 +74,8 @@ pagination:
 			<button class='view-plans-down'>View Plans</button>
 		</div>
 	</div>
-</div>
+</div> #}
+
+{% from 'macros/online-quote.njk' import onlineQuote %}
+{{ onlineQuote(landing) }}
+

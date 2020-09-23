@@ -10,6 +10,8 @@ repairPlans: "View electronic protection plans"
 
 buttonData: GO
 
+bottomButton: Go
+
 bottomQuote: "Get An Instant Online Quote For Your Devices"
 ---
 <!-- Please dont edit anything where three or more : are present  -->
