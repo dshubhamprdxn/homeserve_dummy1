@@ -1,0 +1,38 @@
+<div class="right-panel">
+	<div class="prod-dets">
+		<div class='det-holder'>
+			<div class="post-image">
+				<img src={{basePath}}{{src}} />
+			</div>
+			<h2 class="prod-title">{{ title }}</h2>
+		</div>
+		<div class="price">{{planCost}}</div>
+		<div class="cart-button">
+			<button class="add-to-cart" data-prod-id="{{productId}}">
+				<a>Add To Cart</a>
+			</button>
+			<button class="proceed-to-checkout" data-checkout-id="{{productId}}">
+				<a href="/checkout/">Proceed To Checkout</a>
+			</button>
+		</div>
+	</div>
+
+	<div class='money-back-panel'>
+		<div class='money-back'>
+			<div class="money-img-holder">
+			</div>
+			<h2 class="money-title">30 Day Money Back Guarantee</h2>
+		</div>
+	</div>
+
+	<div class='choose-panel'>
+		<div class='choose-panel-holder'>
+			<label>Why choose this plan:</label>
+			<ul class='choose-plan-details'>
+            {%- for planItem in planDetails %}
+              <li>{{planItem}}</li>
+            {%- endfor %}
+            </ul>
+		</div>
+	</div>
+</div>

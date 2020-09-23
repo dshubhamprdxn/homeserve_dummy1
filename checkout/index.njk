@@ -1,0 +1,123 @@
+---
+layout: layouts/base-layout.njk
+headerStyle: 'landing'
+hideAll: true
+eleventyNavigation:
+  key: checkout
+  order: 2
+---
+
+<div class='checkout-holder'>
+	<div class="wrapper">
+		<h2>Checkout</h2>
+		<div class='thanks-holder'>
+			<p>Thank you for choosing HomeServe. Please review your order, then enter your personal information and payment details to accept coverage.</p>
+		</div>
+		<div class="checkout-container">
+			<div class="contact-detail-holder">
+				<form name='custinfo' action='/thankyou/index.html' netlify>
+					<div class="contact-det-holder">
+						<h3 class='sub-header'>1. Contact Details</h3>
+						<div class='form-input-data'>
+							<p>
+								<label for="email">Email Address</label><input id="email" type="text" name="email" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="confirm-email">Confirm Email Address</label><input id="confirm-email" type="text" name="confirm-email" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="fname">First Name</label><input id="fname" type="text" name="fname" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="lname">Last Name</label><input id="lname" type="text" name="lname" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="houseno">House Number and Street</label><input id="houseno" type="text" name="houseno" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="aptno">Suit or Apt. Number</label><input type="text" name="aptno" />
+							</p>
+
+							<p>
+								<label>City</label><input class="hidden-input city-data" type="text" disabled /><input class='hidden-city' type="hidden" name="city" />
+							</p>
+
+							<p>
+								<label>State</label><input class="hidden-input state-data" type="text" disabled /><input class='hidden-state' type="hidden" name="state" />
+							</p>
+
+							<p>
+								<label>ZIP code</label><input class="hidden-input zip-data" type="text" disabled /><input class='hidden-zip' type="hidden" name="zip" />
+							</p>
+
+							<p></p>
+
+							<p>
+								<label for="home-phone">Home Phone</label>
+								<input id="home-phone" class='phone' type="text" name="home-phone" maxlength="14" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="cell-phone">Cell Phone</label>
+								<input id="cell-phone" class='phone' type="text" name="cell-phone" maxlength="14" required />
+								<span class="field-error"></span>
+							</p>
+
+							<p>
+								<label for="work-phone">Work Phone</label>
+								<input id="work-phone" class='phone' type="text" name="work-phone" maxlength="14" required />
+								<span class="field-error"></span>
+							</p>
+							<p class="checkout-submit">
+								{#<button type='submit'>Submit</button>#}
+							</p>
+							<div class='hidden-holder' tabindex="-1">
+								<input type='text' class='added-products' name='addproducts'></input>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact-det-holder payment-holder">
+						<h3 class='sub-header'>2. Add Payment Method</h3>
+						<div class='form-input-data-payment'>
+							<h3 class='pay-head'>Choose Payment Type</h3>
+						</div>
+						<p class='pay-dets'>
+							<button class='pay-type-btn' type='submit'>Checking Account</button>
+							<span class='arrow'></span>
+						</p>
+						<p class='pay-dets'>
+							<button class='pay-type-btn' type='submit'>Credit or Debit Card</button>
+							<span class='arrow'></span>
+						</p>
+					</div>
+				</form>
+				
+				{#<div class="checkout-paperless">
+					<label class="paperless-container">Go Paperless&excl;
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+					<p>Please send all future documentation to the contact email address above. By selecting Go Paperless you consent to the <a class="terms-of-service" href="#FIXME">terms of service.</a></p>
+				</div>#}
+			</div>
+
+			<div class='cart-popup'>
+				{% set chkoutData = 'chkoutData' %}
+				{% include "partials/_cart-data.njk" %}
+			</div>
+		</div>
+
+	</div>
+</div>	

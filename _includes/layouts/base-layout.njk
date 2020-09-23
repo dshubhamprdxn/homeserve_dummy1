@@ -1,0 +1,67 @@
+--- 
+ pageTitle: "HomeServe" 
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{% if title %} {{ title }} | {% endif %} {{ pageTitle}}</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WDTH5R2');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body style="margin:0;">
+    <div id="loader"></div>
+    <div id="myContent" class="container">
+      {% set hideAll = hideAll %}
+      {% if headerStyle == 'landing' %}
+        {% include "partials/_header-landing.njk" %}
+      {% else %}
+        {% include "partials/_header.njk" %}
+      {% endif %}
+      <main {% if title %} class="blog-details" {% endif %}>
+        <div class="main-content">{{ content | safe }}</div>
+        <div class="cookie-disclosure" style="display: none;">
+          <div class="wrapper">
+            <span class="disclosure-close">close</span>
+            <span class="disclosure-title">What do we use cookies for?</span>
+            <p>HomeServe uses cookies to recognize repeat visits and to enhance your experience on our site. By continuing to use this website you agree with our use of cookies. <a href="/data-privacy-page/" target="_blank" class="disclosure-info">Privacy Policy</a></p>
+          </div>
+        </div>
+      </main>
+      {% if footerStyle == 'landing' %}
+        {% include "partials/_footer-landing.njk" %}
+      {% else %}
+        {% include "partials/_footer.njk" %}
+      {% endif %}
+      
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class='coverage-header'>No Coverage Found</h2>
+          <p class='coverage-content'>Unfortunately we don’t currently offer coverage in <span class='zip-issue'></span> at this time. Please check back soon.</p>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="/assets/vendor/script/main.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7879100.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDTH5R2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

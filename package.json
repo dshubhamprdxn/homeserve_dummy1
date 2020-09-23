@@ -1,0 +1,23 @@
+{
+  "name": "Codebase-without-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "moment": "^2.26.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-container": "^3.0.0",
+    "zipcodes": "^8.0.0"
+  }
+}

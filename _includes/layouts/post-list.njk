@@ -1,0 +1,54 @@
+<section class="post-listing">
+  <div class="wrapper">
+    {% for post in posts | reverse %}
+      <article class="post-item">
+        <div class="product-summary">
+          <div class="post-top">
+            <figure class="post-image">
+              <img src="{{post.data.basePath}}{{ post.data.imageSrc}}" alt="{{ post.data.title }}">
+            </figure>
+            <div class="post-meta">
+              <a href="{{ post.url | url }}" title="{{ post.data.title  }}">
+                <h2 class='prod-title'>{{ post.data.title }}</h2>
+              </a>
+            </div>
+          </div>
+            <div class="post-content">
+              <p>{{ post.data.customExcerpt }}</p>
+              <ul>
+              {%- for list in post.data.excerptList %}
+                <li>{{list}}</li>
+              {%- endfor %}
+              </ul>
+              <p>{{ post.data.excerptPeriod }}</p>
+                <a class="more" href="{{ post.url | url }}" title="{{ post.data.title  }}">
+                  Learn more
+                </a>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <h4 class="accordion-trigger">This plan includes: 
+              <span class="accordion-icon">
+              </span>
+            </h4>
+            <div class="hide-content">
+              <ul class='plan-details'>
+              {%- for planItem in post.data.planDetails %}
+                <li>{{planItem}}</li>
+              {%- endfor %}
+              </ul>
+              <a class="terms" href="{{ post.url | url }}#product-cover-info">See eligibility requirements, exclusions, and other terms</a>
+            </div>
+          </div>
+          <div class="price">{{ post.data.planCost }}</div>
+
+          <div class="cart-button">
+            <button class='add-to-cart' data-prod-id={{post.data.productId}}><span>Add To Cart</span></button>
+            <button class='proceed-to-checkout' data-checkout-id={{post.data.productId}}>
+              <a href={{'/checkout/'}}>Proceed To Checkout</a>
+            </button>
+          </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

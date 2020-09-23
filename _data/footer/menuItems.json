@@ -1,0 +1,104 @@
+[
+  {
+    "title": "About us",
+    "url" : "https://www.homeserve.com/sc/about-us",
+    "subMenus" : [
+    	{
+    		"title" : "Who we are",
+    		"url" : "https://www.homeserve.com/sc/about-us#Whoweare"
+    	},
+    	{
+    		"title" : "Customer promise",
+    		"url" : "https://www.homeserve.com/sc/about-us#Customerpromise"
+    	},
+    	{
+    		"title" : "Leadership",
+    		"url" : "https://www.homeserve.com/sc/about-us#Leadership"
+    	},
+    	{
+    		"title" : "Our Social Impact",
+    		"url" : "https://www.homeserve.com/sc/corporate-social-responsibility"
+    	},
+    	{
+    		"title" : "Blog",
+    		"url" : "https://www.homeserve.com/blog"
+    	},
+    	{
+    		"title" : "Press room",
+    		"url" : "https://www.homeserve.com/media"
+    	}
+    ]
+  },
+  {
+    "title": "Careers",
+    "url" : "https://www.homeserve.com/sc/careers",
+    "subMenus" : [
+    	{
+    		"title" : "Commitment",
+    		"url" : "https://www.homeserve.com/sc/careers#Commitment"
+    	},
+    	{
+    		"title" : "Benefits",
+    		"url" : "https://www.homeserve.com/sc/careers#Benefits"
+    	},
+    	{
+    		"title" : "Career opportunities",
+    		"url" : "https://www.homeserve.com/sc/careers#Careeropportunities"
+    	},
+    	{
+    		"title" : "Become a service provider",
+    		"url" : "https://www.homeserve.com/sc/onboarding"
+    	}
+    ]
+  },
+  {
+    "title": "Partnerships",
+    "url" : "https://www.homeserve.com/sc/partnerships",
+    "subMenus" : [
+    	{
+    		"title" : "How it works",
+    		"url" : "https://www.homeserve.com/sc/partnerships#Howitworks"
+    	},
+    	{
+    		"title" : "Partner with us",
+    		"url" : "https://www.homeserve.com/sc/partnerships#Partnerwithus"
+    	},
+    	{
+    		"title" : "Our trusted partners",
+    		"url" : "https://www.homeserve.com/sc/partnerships#Ourtrustedpartners"
+    	},
+    	{
+    		"title" : "Innovative products",
+    		"url" : "https://www.homeserve.com/sc/partnerships#Innovativeproducts"
+    	}
+    ]
+  },
+  {
+    "title": "Contact us",
+    "url" : "https://www.homeserve.com/sc/contact-us",
+    "subMenus" : [
+    	{
+    		"title" : "For support, call:",
+    		"url" : "",
+    		"link":"false"
+    	},
+    	{
+    		"title" : "1-855-336-2465",
+			"url" : "tel: 1-888-752-6740"
+    	},
+    	{
+    		"title" : "Web support",
+    		"url" : "",
+    		"link":"false"
+    	},
+    	{
+    		"title" : "1-888-752-6740",
+    		"url" : "tel: 1-888-752-6740"
+    	},
+    	{
+    		"title" : "info@homeserveusa.com",
+    		"url" : "mailto:info@homeserveusa.com?subject=An%20enquiry"
+    	}
+    ]
+  }
+]

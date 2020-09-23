@@ -1,0 +1,38 @@
+<div class='cart-details-holder'>
+	<div class='cart-header'>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon"><path d="M4.167 20.056a2.444 2.444 0 1 0 4.89 0 2.444 2.444 0 0 0-4.89 0zm12.222 0a2.444 2.444 0 1 0 4.889 0 2.444 2.444 0 0 0-4.889 0zm-7.887-5.779l13.527-3.865a.687.687 0 0 0 .471-.623V3.066H5.267V.988A.49.49 0 0 0 4.778.5H.989A.49.49 0 0 0 .5.988v1.956h2.375L5.28 14.013l.23 1.153v1.833c0 .269.22.489.489.489H22.01c.27 0 .489-.222.489-.489v-1.833H8.752c-1.404.001-1.433-.55-.25-.889z"></path></svg>
+		<div class='lbl-cart'>My Cart</div>
+
+		<a href="/" class='logo-holder'>
+			<img src="/assets/images/home.svg" class='home-holder' />
+			<img src="/assets/images/logo.svg" class='logo-img' />
+		</a>
+
+		<div class='cart-close-btn {{chkoutData}}'>
+			<button class='btn-close-cart'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 3.541L20.459 1l-8.457 8.462L3.541 1 1 3.541l8.462 8.461L1 20.459 3.541 23l8.461-8.461L20.459 23 23 20.459l-8.461-8.457z"></path></svg></button>
+		</div>
+	</div>
+	<div class='empty-cart'>
+		<div class='cart-text'>Your shopping cart is empty!</div>
+		<div class='close-text'><span class='close-data'>close</span></div>
+		<div class='checkout-to-shop'><a href="/coverages/" class="back-to-shopping">Back to Shopping</a></div>
+	</div>
+	<div class='cart-prod-details'>
+		
+	</div>
+
+	<div class='cart-footer'>
+		<div class='total-price-det'>
+			<div class='total-lbl'>Total <span class='prod-count'></span> <span class='plural'>Plans</span><span class='single'>Plan</span></div>
+			<div class='total-price'>$<span class='price-val'></span>/mo</div>
+		</div>
+
+		<div class='lbl-tax {{taxDisp}}'>
+			Applicable taxes will be applied.
+		</div>
+
+		<div class='proc-chkout {{chkoutData}}'>
+			<button class='pro-to-check'><a href={{'/checkout/'}}>Proceed To Checkout</a></button>
+		</div>
+	</div>
+</div>

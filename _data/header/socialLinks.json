@@ -1,0 +1,15 @@
+[{
+  "name": "Twitter",
+  "class": "fab fa-twitter twitter",
+  "link": "https://twitter.com/homeserveusa"
+},
+{
+  "name": "Facebook",
+  "class": "fab fa-facebook-f facebook",
+  "link": "https://www.facebook.com/HomeServeUSA/"
+},
+{
+  "name": "Youtube",
+  "class": "fab fa-youtube youtube",
+  "link": "https://www.youtube.com/user/homeserve"
+}]
