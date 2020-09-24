@@ -819,12 +819,13 @@ $(window).on('load',function(e) {
       document.cookie = "cart=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     }
   }
-  else if(window.location.pathname == '/') {
+  else if(window.location.pathname == '/' || window.location.pathname == '/mikerow/') {
       if(cookieVal !== "") {
         let cookieData = JSON.parse(cookieVal);
         $('.zip-input-holder,.zip-form').hide();
         $('.existing-zip,.existing-zip-down').show();
         $('.existing-zip-down').css('display','inline-block');
+        console.log("ZIP IS "+cookieData.zip);
         $('.home-city').html(cookieData.city+",");
         $('.home-state').html(cookieData.state);
         $('.home-zip').html(cookieData.zip);
