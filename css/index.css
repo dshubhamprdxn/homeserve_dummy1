@@ -565,6 +565,7 @@ main .wrapper {
 }
 
 .top-container .call-us {
+  margin-right: 5.8%;
   color: #222;
   font-size: 18px;
   font-weight: 300;
@@ -1280,7 +1281,7 @@ main .wrapper {
 
 .hero-mike .zip-content {
   width: 45.56%;  
-  padding: 44px 1.5em 60px;
+  padding: 39px 1.5em 60px;
   margin: 93px auto -41px !important;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 6px;
@@ -1296,7 +1297,7 @@ main .wrapper {
 }
 
 .hero-mike .zip-header {
-  margin: 0 0 30px;
+  margin: 0 0 40px;
   color: #000;
   font-family: museo-sans-rounded, MuseoSans;
   font-size: 36px;
@@ -1334,7 +1335,7 @@ main .wrapper {
   width: 70%;
   background: #fff;
   padding: 18px 20px;
-  margin-right: 10px;
+  margin-right: 11px;
   font-family: museo-sans-rounded-light, MuseoSans;
   font-style: normal;
   font-size: 18px;
@@ -1377,7 +1378,7 @@ input:focus::-webkit-input-placeholder { color: #665BB4; }
 
 .hero-mike .go-btn {
   width: 55%;
-  padding: 13px 34px;
+  padding: 13px 7%;
   background: #db022d;
   font-size: 18px;
   font-weight: 400;
@@ -3460,6 +3461,49 @@ End of Cart Holder
 }
 
 @media only screen and (max-width: 768px) {
+
+  /* Mikerow media query stlying started */
+  .ul-holder ul, .ul-holder li {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ul-holder .post-image {
+    margin: 0 auto;
+    width: 9%;
+    padding: 20px 0px 20px 3%;
+  }
+
+  .ul-holder .feature-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .hero-mike .container-holder { padding: 5% 0 0; }
+
+  .hero-mike .zip-content {
+    width: 80%;
+    margin: 0 auto !important;
+    padding: 20px 1.5em 30px;
+  }
+
+  .hero-mike .zip-header {
+    margin: 0 0 30px;
+    font-size: 28px;
+  }
+
+  .hero-mike .zip-input-holder input {
+    width: 70%;
+    padding: 15px 10px;
+  }
+
+  .hero-mike .go-btn {
+    padding: 13px 3%;
+  }
+
+  /* Mikerow media query stlying ended */
+
   .detail-image {
     width :100%;
   }
@@ -3661,6 +3705,40 @@ End of Cart Holder
 
 @media only screen and (max-width: 600px) {
   /*.top-bar .slot { margin: 0 0 15px 3%; }*/
+
+  /* Mikerow media query stlying started */
+  .mikerow-footer-bottom .footer-address {
+    flex-basis: 90%;
+    margin: 0 auto;
+  }
+
+  .mikerow-footer-top .footer-links .footer-badge {
+    margin: 0 auto;
+  }
+
+  .hero-mike .zip-header {
+    font-size: 22px;
+  }
+
+  
+  .hero-mike .zip-input-holder   {
+    width: 100%;
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .hero-mike .go-btn {
+    padding: 13px 3%;
+    margin-left: 15%;
+  }
+
+  .ul-holder .post-image {
+    width: 13%;
+    padding: 20px 0px 20px 5%;
+  }
+
+  /* Mikerow media query stlying ended */
+  
 
   .product-ribbon.sticky-ribbon {
     z-index: 2;
