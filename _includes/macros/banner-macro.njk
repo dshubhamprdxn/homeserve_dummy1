@@ -1,5 +1,5 @@
-{% macro BannerData(src) %}
-<div class="banner-image">
+{% macro BannerData(src, classname) %}
+<div class="banner-image {{ classname}}">
 	<figure>
 		<img src="{{ src }}">
 	</figure>

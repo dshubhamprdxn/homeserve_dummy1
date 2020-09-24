@@ -1,6 +1,6 @@
 ---
 layout: layouts/base-layout.njk
-footerStyle: 'landing' 
+footerStyle: 'landing-mikerow'
 headerStyle: 'default'
 eleventyNavigation:
   key: mikerow
@@ -11,18 +11,18 @@ eleventyNavigation:
 {% for data in collections.mike %}
 
 {% from 'macros/banner-macro.njk' import BannerData %}
-{{ BannerData('/assets/images/Banner-Mikerow.jpg') }}
+{{ BannerData('/assets/images/Banner-Mikerow.jpg','banner-mike') }}
 
 {% from 'macros/zipcode.njk' import zipCode %}
-{{ zipCode(data) }}
+{{ zipCode(data, 'hero-mike') }}
 
-<div class='about-homserve'>
+<div class='about-homeserve'>
 	<div class='wrapper'>
 		{{content | safe }}
 	</div>
 </div>
 
 {% from 'macros/online-quote.njk' import onlineQuote %}
-{{ onlineQuote(data) }}
+{{ onlineQuote(data, 'mikerow-quote') }}
 
 {% endfor %}

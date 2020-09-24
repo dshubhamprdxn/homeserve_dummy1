@@ -1,5 +1,5 @@
-{% macro onlineQuote(collectionName) %}
-<div class="online-quote">
+{% macro onlineQuote(collectionName, className) %}
+<div class="online-quote {{ className }}">
 	<div class="wrapper">
 		<p>{{collectionName.data.bottomQuote}}</p>
 		<form class="zip-form">

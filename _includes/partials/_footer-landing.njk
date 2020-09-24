@@ -1,4 +1,8 @@
-<div class="footer-top">
+{% if footerStyle == 'landing-mikerow' %}
+    <div class="footer-top mikerow-footer-top">
+{% else %}
+    <div class="footer-top">
+{% endif %}
     <div class="footer-text">
         <div class="wrapper">
             <p>HomeServe is an independent company separate from your local utility or community.</p>
@@ -28,7 +32,11 @@
         </div>
     </div>
 </div>
+{% if footerStyle == 'landing-mikerow' %}
+<div class="footer-bottom mikerow-footer-bottom">
+{% else %}
 <div class="footer-bottom">
+{% endif %}
     <div class="wrapper">
         <div class="footer-address">
             <address>Corporate office: 601 Merritt 7, Norwalk, CT 06851</address>
