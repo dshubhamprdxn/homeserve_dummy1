@@ -2,7 +2,7 @@
   <div class="plp-header-top">
     <div class="top-bar">
       <div class="top-container">
-
+      {% if headerStyle == 'default' %}
         <div class='new-zip-holder slot'>
           <div class="addr-holder">
             <span class="city-name"></span>
@@ -52,7 +52,12 @@
             </div>
           </div>
         </div>
-
+      {% else %}
+        <div class="call-us">
+          <span>Call</span>
+          <a href="tel:1-855-336-2465">1-855-336-2465</a>
+        </div>
+      {% endif %}
       </div>
     </div>
     <div class="wrapper">

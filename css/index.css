@@ -564,6 +564,16 @@ main .wrapper {
   font-weight: 300;
 }
 
+.top-container .call-us {
+  color: #222;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.top-container .call-us a {
+  color: #0096c8;
+}
+
 .top-bar .new-zip-holder {
   cursor: pointer;
 }
