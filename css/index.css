@@ -181,7 +181,7 @@ a {
 
 .wrapper {
   max-width: 1286px;
-  width: 91%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -367,7 +367,7 @@ main .wrapper {
 }
 
 .header-top .wrapper{ 
-  width: 90.8%;
+  width: 80%;
   padding: 22px 30px 34px;
   /*display: flex;
   justify-content: space-between;*/
@@ -1226,13 +1226,13 @@ main .wrapper {
   right: 0;
   left: 0;
   background-image: -webkit-gradient(linear,right top, left top,color-stop(0, #eceae6),color-stop(50%, rgba(236,234,230,.25)),to(#eceae6));
-  background-image: -o-linear-gradient(right,#eceae6 0,rgba(236,234,230,.60) 50%,#eceae6 100%);
-  background-image: linear-gradient(to left,#eceae6 0,rgba(236,234,230,.60) 50%,#eceae6 100%);
+  background-image: -o-linear-gradient(right,#eceae6 0,rgba(236,234,230,.25) 50%,#eceae6 100%);
+  background-image: linear-gradient(to left,#eceae6 0,rgba(236,234,230,.25) 50%,#eceae6 100%);
 }
 
 .container-holder {
   width: 90%;
-  padding: 89px 0 0;
+  padding: 105px 0 0;
   margin: 0 auto;
 }
 
@@ -1250,10 +1250,10 @@ main .wrapper {
 }
 
 .zip-content {
-  width: 70%;
+  width: 59.5%;
   padding: 44px 1.5em 30px;
   border-radius: 5px;
-  margin: 75px auto -41px !important;
+  margin: 25px auto 15px !important;
   background-color: #eceae6;
   -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.25);
   box-shadow: 0 4px 10px rgba(0,0,0,.25);
@@ -1370,21 +1370,19 @@ button:hover,
 .homeserve-content { margin: 30px auto 40px;
   padding-top: 50px;
 }
+
+.homeserve-content .wrapper,.feature .wrapper { width: 77.5% }
 .feature { margin: 0 auto 39px; }
 
-.feature ul {
+.feature ul,.service ul{
   display: flex;
   justify-content: space-between;
 }
 
 .feature li { flex-basis: 31.5%; }
+.feature li img { width: 92%; }
 
-.feature li img {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.feature h3 {
+.feature h3,.service h3 {
   color: #e7342c;
   font-family: MuseoSans;
   font-size: 26px;
@@ -1405,12 +1403,49 @@ button:hover,
   margin: 0;
 }
 
+.service { margin-bottom: 88px; }
+.service h3 { color: #000; }
+
+.service ul,
+.service li {
+  display: flex;
+  justify-content: center;
+}
+
+.service h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.service .post-image {
+  content: "";
+  flex-basis: 13.6%;
+  height: 55px;
+  padding: 22px 0px 0px 25px;
+  border-radius: 50px;
+  background: #e7342c;
+}
+
+.service .post-image img {
+  width: 60%;
+}
+
+.service .service-list {
+  margin-left: 20px;
+  flex-basis: 58%;
+  width: 60%;
+  border-right: none;
+  padding-right: 0px; 
+}
+
+
 .feature-list { border-right: 1px solid #ccc; padding-right: 10px; }
 li:last-child .feature-list { border-right: 0; }
 .about-us { background-color: #eceae6; }
 
 .about-us div {
-  width: 91%;
+  width: 80%;
   padding: 14px 0;
   margin: 0 auto;
 }
@@ -2376,7 +2411,7 @@ li:last-child .feature-list { border-right: 0; }
 .footer-links { padding: 14px 0 9px; }
 
 .footer-links .wrapper {
-  width: 71.7%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -2403,8 +2438,8 @@ li:last-child .feature-list { border-right: 0; }
 }
 
 .footer-badge {
-  width: 16.4%;
-  margin: 11px 29.5% 0 0;
+  width: 12%;
+  margin: 10px 22% 0 0;
 }
 
 .footer-badge a { text-align: right; }
@@ -3274,7 +3309,7 @@ End of Cart Holder
 
   .header-top .wrapper,
   .cookie-disclosure .wrapper {
-    width: 91%;
+    width: 80%;
   }
 
   .footer-bottom .wrapper { justify-content: space-between; }
@@ -3284,7 +3319,7 @@ End of Cart Holder
 @media only screen and (max-width: 1024px) {
   .header-top .wrapper,
   .cookie-disclosure .wrapper {
-    width: 91%;
+    width: 80%;
   }
 
   a.new-proc-to-chk { padding: 20px 25px; }
@@ -3292,6 +3327,7 @@ End of Cart Holder
   .display-popup { left: 57%; }
   .zip-content {  width: 89%; }
   .zip-code label { right: 12%; }
+  .service .post-image { flex-basis: 17.6%; }
   .checkout-holder .cart-popup { right: 4%; }
   .footer-links .wrapper { width: 90%; }
   .footer-bottom .wrapper { justify-content: space-between; }
@@ -3426,6 +3462,21 @@ End of Cart Holder
     width: 50%;
     margin: 0 auto 40px;
   }
+
+  .service ul,.service li {
+    display: block;
+    text-align: center;
+  }
+
+  .service .post-image {
+    width: 55px;
+    margin: 0 auto 25px;
+  }
+
+  .service .service-list {
+    margin: 0 auto;
+  }
+
   
   /*.zip-form { width: 32%; }*/
 
