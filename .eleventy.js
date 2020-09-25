@@ -66,6 +66,8 @@ module.exports = function (config) {
     .use(markdownItContainer,'homeserve-content')
     .use(markdownItContainer,'feature')
     .use(markdownItContainer,'feature-list')
+    .use(markdownItContainer,'service')
+    .use(markdownItContainer,'service-list')
     .use(markdownItContainer,'about-us')
     .use(markdownItContainer,'faq-heading')
     .use(markdownItContainer,'faq-content')
